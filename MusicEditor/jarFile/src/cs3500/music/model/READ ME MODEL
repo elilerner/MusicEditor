@@ -1,0 +1,43 @@
+IMUSICEDITORMODEL
+
+The IMusicEditorModel contains all the methods needed for a MusicEditor
+
+----------------------------------------------------------------------------------------------------
+MUSICEDITORMODELIMPL
+
+The MusicEditorModelImpl class implements the IMusicEditorModel interface.
+
+----------------------------------------------------------------------------------------------------
+NOTE
+
+The Note class creates one single Note.
+There are a lot of get methods in here which are used in the MusicEditorModelImpl.
+
+A Note consists of
+   * @param duration   duration of this note.
+   * @param instrument the instrument used in this note.
+   * @param volume     the volume used in this note.
+   * @param pitch      Pitch of this note
+   * @param octave     octave of this note.
+   * @param start      where the starting measure is.
+   * @param head       Note-head if true or note-sustain if false;
+
+----------------------------------------------------------------------------------------------------
+PITCH
+
+The Pitch enum represents the 12 distinct pitches in the Western system of music. Each are converted
+to String form in order to be used properly in the getState method in the Model.
+
+
+----------------------------------------------------------------------------------------------------
+UPDATES:
+----------------------------------------------------------------------------------------------------
+ReadOnlyMusicEditor
+
+This is used for our View. It only allows method that do not mutate data. If any attempts to
+mutate an Exception is thrown;
+
+----------------------------------------------------------------------------------------------------
+NoteValue
+
+Used to compare Notes

@@ -1,0 +1,41 @@
+We put individual READ ME files in each package. Look there for updates.
+
+HOW TO PERFORM ACTIONS ON GUI:
+
+----------------------------------------------------------------------------------------------------
+Pause Play:
+The Music and GUI automatically play from initiation.
+
+Key: SPACE_BAR
+
+The SpaceBar is used to Pause and Play Music.
+----------------------------------------------------------------------------------------------------
+Adding a new Note: (used Mouse Events)
+We wanted to make adding Notes as easy as possible. So we made the only thing that matter be the
+Y position of the Mouse. A Note will be added at the beat where the Red Line currently resides in.
+
+Mouse: BUTTON_1
+
+Button one click event is used to add notes when the composition is paused.
+----------------------------------------------------------------------------------------------------
+Scroll Through Composition with Arrow Keys
+
+Scrolling through the composition could not be easier with our design. Simply use LEFT arrow key to
+Scroll left and RIGHT arrow key go right.
+----------------------------------------------------------------------------------------------------
+Jump to the beginning or end of the composition, via the Home or End keys
+
+Jumping to the beginning or end of the composition has never been easier with our implementation.
+Ever want to go to the beginning or end of a song but had to first Pause the composition in order
+to do so?
+Well now you don't have to worry about that! We made this simple. Simply press the Home key to go
+to the beginning and End key to go to the end of the song. You can do this while the song is played
+or paused. The song will resume from wherever the Red Line Location is.
+----------------------------------------------------------------------------------------------------
+
+Type in file then view in order to bring up
+composite = "composite"
+guiView = "visual"
+midi = "midi"
+console = "console"
+

@@ -1,0 +1,51 @@
+ConsoleController implements IController
+
+1. Console Controller is the Controller for the ConsoleView.
+2. Has a run method that renders the Controller.
+
+----------------------------------------------------------------------------------------------------
+ConsoleFactory
+
+1. Factory for the Controllers.
+2. Initializes one of:
+                    MidiViewImpl
+                    GuiViewFrame
+                    ConsoleView
+                    CompostiteView
+
+----------------------------------------------------------------------------------------------------
+Controller
+
+1. This is the Controller for the Composite View
+2. Configuration of the Keyboard and Mouse occurs here
+3. Classes for the KeyEvents occur here
+                                  1. Play Pause
+                                  2. Go to Start
+                                  3. Go to End
+                                  4. Move Left
+                                  5. Move Right
+
+----------------------------------------------------------------------------------------------------
+GuiMidiController
+
+1. Controller for the Midi and Gui View.
+2. has a run method that renders the Controller.
+3. has a nextBeat method that plays the Midi
+4. This is called in the ConsoleFactory
+
+----------------------------------------------------------------------------------------------------
+IController
+
+1. Interface for the Controllers
+
+----------------------------------------------------------------------------------------------------
+keyBoardHandler
+
+1. sets the KeyTyped, KeyPressed, and KeyRelease
+2. runs the appropriate keyEvents.
+
+----------------------------------------------------------------------------------------------------
+MouseHandler
+1. sets the Mouse Clicks
+2. runs the appropriate MouseEvents.
+

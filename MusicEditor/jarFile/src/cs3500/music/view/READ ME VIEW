@@ -1,0 +1,81 @@
+----------------------------------------------------------------------------------------------------
+
+ConcreteGuiViewPanel
+
+1. Draws the RedLine
+2. Draws the Notes
+3. Draws the Note Labels
+4. Draws the Beats
+
+----------------------------------------------------------------------------------------------------
+
+ConsoleView
+
+This is the view that just displays the textual console output of the piece.
+
+
+----------------------------------------------------------------------------------------------------
+
+GuiViewFrame
+
+This is the mainFrame that displays both of the Jpanels side by side, the ConcreteGuiViewPanel
+as well as the PianoGuiViewPanel.
+
+
+----------------------------------------------------------------------------------------------------
+
+IView
+
+This interface holds the functionality common to all view
+
+----------------------------------------------------------------------------------------------------
+
+MidiViewImpl
+
+This is the midi view, which is just the view that creates the sounds/ the audio of each note
+in the passed in piece of music without any visuals.
+
+----------------------------------------------------------------------------------------------------
+
+PianoGuiView
+
+This is the part of the mainFrame gui that displays the piano keyboard as well as the highlighted
+current notes.
+
+----------------------------------------------------------------------------------------------------
+
+MusicEditor
+
+This class invokes the main method, and utilizes the controller to run/ display the appropriate
+view.
+
+----------------------------------------------------------------------------------------------------
+
+MusicMain
+
+This class is responsible for running the midi view given some notes or a song in order to
+output the appropriate sounds/ music.
+
+----------------------------------------------------------------------------------------------------
+UPDATES:
+----------------------------------------------------------------------------------------------------
+CompositeView
+
+This class Combines the MidiView and the GuiView.
+It adds MouseListerner and KeyListener to the Gui
+Also checks if the Editor is playing. If not playing it will stop rendering the Midi.
+----------------------------------------------------------------------------------------------------
+FactoryView
+Returns an IView based on a String input
+----------------------------------------------------------------------------------------------------
+MockReceiver
+Used for testing of the Midi
+----------------------------------------------------------------------------------------------------
+MockSynthesizer
+Used for testing of the Midi
+----------------------------------------------------------------------------------------------------
+ISuperIView
+This interface extends the IView interface.
+Adds methods that are needed for composite but not needed elsewhere.
+----------------------------------------------------------------------------------------------------
+
